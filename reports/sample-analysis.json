@@ -1,0 +1,716 @@
+{
+  "title": "Radiation Shielding & Attenuation Lab",
+  "version": "1.0.0",
+  "createdAt": "2026-10-14T19:41:14.634Z",
+  "rows": [
+    {
+      "section": "Context",
+      "name": "View",
+      "value": "Complete shielding analysis",
+      "unit": ""
+    },
+    {
+      "section": "Context",
+      "name": "App version",
+      "value": "1.0.0",
+      "unit": ""
+    },
+    {
+      "section": "Context",
+      "name": "Photon energy",
+      "value": 1,
+      "unit": "MeV"
+    },
+    {
+      "section": "Context",
+      "name": "Data source",
+      "value": "srd126",
+      "unit": ""
+    },
+    {
+      "section": "Context",
+      "name": "Coefficient version",
+      "value": "SRD 126; data content July 2004",
+      "unit": ""
+    },
+    {
+      "section": "Context",
+      "name": "Lookup method",
+      "value": "exact tabulated",
+      "unit": ""
+    },
+    {
+      "section": "Context",
+      "name": "Energy bracket",
+      "value": "1 to 1",
+      "unit": "MeV"
+    },
+    {
+      "section": "Context",
+      "name": "Edge side",
+      "value": "above",
+      "unit": ""
+    },
+    {
+      "section": "Context",
+      "name": "Initial primary intensity",
+      "value": 1000,
+      "unit": "user photon units"
+    },
+    {
+      "section": "Context",
+      "name": "Target transmission",
+      "value": 0.01,
+      "unit": "fraction"
+    },
+    {
+      "section": "Layer 1",
+      "name": "Material",
+      "value": "Lead",
+      "unit": ""
+    },
+    {
+      "section": "Layer 1",
+      "name": "Composition (mass fractions)",
+      "value": "Pb:1",
+      "unit": ""
+    },
+    {
+      "section": "Layer 1",
+      "name": "Composition source",
+      "value": "https://physics.nist.gov/PhysRefData/XrayMassCoef/tab1.html",
+      "unit": ""
+    },
+    {
+      "section": "Layer 1",
+      "name": "Density used",
+      "value": 11.35,
+      "unit": "g/cm3"
+    },
+    {
+      "section": "Layer 1",
+      "name": "NIST reference density",
+      "value": 11.35,
+      "unit": "g/cm3"
+    },
+    {
+      "section": "Layer 1",
+      "name": "Density source",
+      "value": "https://physics.nist.gov/PhysRefData/XrayMassCoef/tab1.html",
+      "unit": ""
+    },
+    {
+      "section": "Layer 1",
+      "name": "Density note",
+      "value": "NIST reference density; some values are nominal. Not a measurement of the user sample. Change density to match sample conditions.",
+      "unit": ""
+    },
+    {
+      "section": "Layer 1",
+      "name": "Physical thickness",
+      "value": 1,
+      "unit": "cm"
+    },
+    {
+      "section": "Layer 1",
+      "name": "Areal density",
+      "value": 11.35,
+      "unit": "g/cm2"
+    },
+    {
+      "section": "Layer 1",
+      "name": "Mass attenuation coefficient",
+      "value": 0.07102,
+      "unit": "cm2/g"
+    },
+    {
+      "section": "Layer 1",
+      "name": "Linear attenuation coefficient",
+      "value": 0.8060769999999999,
+      "unit": "1/cm"
+    },
+    {
+      "section": "Layer 1",
+      "name": "Coefficient URL",
+      "value": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z82.html",
+      "unit": ""
+    },
+    {
+      "section": "Layer 1",
+      "name": "Version",
+      "value": "SRD 126; data content July 2004",
+      "unit": ""
+    },
+    {
+      "section": "Layer 1",
+      "name": "Retrieval date",
+      "value": "2026-10-14",
+      "unit": ""
+    },
+    {
+      "section": "Layer 1",
+      "name": "Raw source SHA256",
+      "value": "08e7faf3e41a0efd55cbd86a6d972c88725e04f67e7430142db37831d30272c2",
+      "unit": ""
+    },
+    {
+      "section": "Layer 1",
+      "name": "Interpolation",
+      "value": "exact tabulated",
+      "unit": ""
+    },
+    {
+      "section": "Layer 1",
+      "name": "Energy bracket",
+      "value": "1 to 1",
+      "unit": "MeV"
+    },
+    {
+      "section": "Layer 1",
+      "name": "Layer transmission",
+      "value": "4.466e-1",
+      "unit": ""
+    },
+    {
+      "section": "Layer 1",
+      "name": "Cumulative transmission",
+      "value": "4.466e-1",
+      "unit": ""
+    },
+    {
+      "section": "Layer 1",
+      "name": "Optical depth contribution",
+      "value": 0.8060769999999999,
+      "unit": ""
+    },
+    {
+      "section": "Layer 2",
+      "name": "Material",
+      "value": "Water, Liquid",
+      "unit": ""
+    },
+    {
+      "section": "Layer 2",
+      "name": "Composition (mass fractions)",
+      "value": "H:0.111898; O:0.888102",
+      "unit": ""
+    },
+    {
+      "section": "Layer 2",
+      "name": "Composition source",
+      "value": "https://physics.nist.gov/PhysRefData/XrayMassCoef/tab2.html",
+      "unit": ""
+    },
+    {
+      "section": "Layer 2",
+      "name": "Density used",
+      "value": 1,
+      "unit": "g/cm3"
+    },
+    {
+      "section": "Layer 2",
+      "name": "NIST reference density",
+      "value": 1,
+      "unit": "g/cm3"
+    },
+    {
+      "section": "Layer 2",
+      "name": "Density source",
+      "value": "https://physics.nist.gov/PhysRefData/XrayMassCoef/tab2.html",
+      "unit": ""
+    },
+    {
+      "section": "Layer 2",
+      "name": "Density note",
+      "value": "NIST reference density; some values are nominal. Not a measurement of the user sample. Change density to match sample conditions.",
+      "unit": ""
+    },
+    {
+      "section": "Layer 2",
+      "name": "Physical thickness",
+      "value": 10,
+      "unit": "cm"
+    },
+    {
+      "section": "Layer 2",
+      "name": "Areal density",
+      "value": 10,
+      "unit": "g/cm2"
+    },
+    {
+      "section": "Layer 2",
+      "name": "Mass attenuation coefficient",
+      "value": 0.07072,
+      "unit": "cm2/g"
+    },
+    {
+      "section": "Layer 2",
+      "name": "Linear attenuation coefficient",
+      "value": 0.07072,
+      "unit": "1/cm"
+    },
+    {
+      "section": "Layer 2",
+      "name": "Coefficient URL",
+      "value": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/water.html",
+      "unit": ""
+    },
+    {
+      "section": "Layer 2",
+      "name": "Version",
+      "value": "SRD 126; data content July 2004",
+      "unit": ""
+    },
+    {
+      "section": "Layer 2",
+      "name": "Retrieval date",
+      "value": "2026-10-14",
+      "unit": ""
+    },
+    {
+      "section": "Layer 2",
+      "name": "Raw source SHA256",
+      "value": "11cbc0a9d4d310a6236cf11254708a63c485e7ce606bd1e11ec175e5bbec3725",
+      "unit": ""
+    },
+    {
+      "section": "Layer 2",
+      "name": "Interpolation",
+      "value": "exact tabulated",
+      "unit": ""
+    },
+    {
+      "section": "Layer 2",
+      "name": "Energy bracket",
+      "value": "1 to 1",
+      "unit": "MeV"
+    },
+    {
+      "section": "Layer 2",
+      "name": "Layer transmission",
+      "value": "4.930e-1",
+      "unit": ""
+    },
+    {
+      "section": "Layer 2",
+      "name": "Cumulative transmission",
+      "value": "2.202e-1",
+      "unit": ""
+    },
+    {
+      "section": "Layer 2",
+      "name": "Optical depth contribution",
+      "value": 0.7072,
+      "unit": ""
+    },
+    {
+      "section": "Primary material",
+      "name": "Mass coefficient",
+      "value": 0.07102,
+      "unit": "cm2/g"
+    },
+    {
+      "section": "Primary material",
+      "name": "Mass energy-absorption coefficient (not attenuation)",
+      "value": 0.03654,
+      "unit": "cm2/g"
+    },
+    {
+      "section": "Primary material",
+      "name": "Linear coefficient",
+      "value": 0.8060769999999999,
+      "unit": "1/cm"
+    },
+    {
+      "section": "Primary material",
+      "name": "Transmission",
+      "value": "4.466e-1",
+      "unit": ""
+    },
+    {
+      "section": "Primary material",
+      "name": "Log transmission",
+      "value": -0.8060769999999999,
+      "unit": ""
+    },
+    {
+      "section": "Primary material",
+      "name": "Attenuation fraction",
+      "value": 0.553393327935484,
+      "unit": ""
+    },
+    {
+      "section": "Primary material",
+      "name": "Attenuation factor",
+      "value": "2.239e0",
+      "unit": ""
+    },
+    {
+      "section": "Primary material",
+      "name": "Uncollided output intensity",
+      "value": "4.466e2",
+      "unit": "same photon units as input"
+    },
+    {
+      "section": "Primary material",
+      "name": "Required thickness",
+      "value": 5.713064863515633,
+      "unit": "cm"
+    },
+    {
+      "section": "Primary material",
+      "name": "HVL",
+      "value": 0.8599019455460772,
+      "unit": "cm"
+    },
+    {
+      "section": "Primary material",
+      "name": "TVL",
+      "value": 2.856532431757817,
+      "unit": "cm"
+    },
+    {
+      "section": "Primary material",
+      "name": "Mean free path",
+      "value": 1.2405762724900973,
+      "unit": "cm"
+    },
+    {
+      "section": "Primary material",
+      "name": "First interaction probability within thickness",
+      "value": 0.553393327935484,
+      "unit": ""
+    },
+    {
+      "section": "Stack",
+      "name": "Total transmission",
+      "value": "2.202e-1",
+      "unit": ""
+    },
+    {
+      "section": "Stack",
+      "name": "Log transmission",
+      "value": -1.513277,
+      "unit": ""
+    },
+    {
+      "section": "Stack",
+      "name": "Total thickness",
+      "value": 11,
+      "unit": "cm"
+    },
+    {
+      "section": "Stack",
+      "name": "Uncollided stack output intensity",
+      "value": "2.202e2",
+      "unit": "same photon units as input"
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "Independent XCOM source",
+      "value": "https://physics.nist.gov/cgi-bin/Xcom/xcom3_1",
+      "unit": ""
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "Version",
+      "value": "SRD 8 online response snapshot; response provides no release identifier",
+      "unit": ""
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "coherent",
+      "value": 0.002991,
+      "unit": "cm2/g"
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "coherent share of partial sum",
+      "value": 0.04211430421987863,
+      "unit": "fraction"
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "incoherent",
+      "value": 0.04993,
+      "unit": "cm2/g"
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "incoherent share of partial sum",
+      "value": 0.7030314977260247,
+      "unit": "fraction"
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "photoelectric",
+      "value": 0.0181,
+      "unit": "cm2/g"
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "photoelectric share of partial sum",
+      "value": 0.2548541980540967,
+      "unit": "fraction"
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "pairNuclear",
+      "value": 0,
+      "unit": "cm2/g"
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "pairNuclear share of partial sum",
+      "value": 0,
+      "unit": "fraction"
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "pairElectron",
+      "value": 0,
+      "unit": "cm2/g"
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "pairElectron share of partial sum",
+      "value": 0,
+      "unit": "fraction"
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "Partial coefficient sum",
+      "value": 0.071021,
+      "unit": "cm2/g"
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "XCOM reference total",
+      "value": 0.07102,
+      "unit": "cm2/g"
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "Relative residual",
+      "value": 0.000014080540692776683,
+      "unit": ""
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "Diagnostic tolerance",
+      "value": 0.002,
+      "unit": ""
+    },
+    {
+      "section": "XCOM interactions",
+      "name": "Interpretation",
+      "value": "Fractions are normalized to the sum of partial coefficients. Residual compares that sum with the separately tabulated/interpolated XCOM total; rounding and interpolation need not commute. Tolerance is a diagnostic, not an uncertainty estimate.",
+      "unit": ""
+    },
+    {
+      "section": "Spectrum",
+      "name": "Photon fluence ratio",
+      "value": "1.101e-1",
+      "unit": ""
+    },
+    {
+      "section": "Spectrum",
+      "name": "Energy fluence ratio",
+      "value": "2.002e-1",
+      "unit": ""
+    },
+    {
+      "section": "Spectrum",
+      "name": "Input mean photon energy",
+      "value": 0.55,
+      "unit": "MeV"
+    },
+    {
+      "section": "Spectrum",
+      "name": "Output mean photon energy",
+      "value": 1,
+      "unit": "MeV"
+    },
+    {
+      "section": "Spectrum",
+      "name": "Duplicate entries merged",
+      "value": 0,
+      "unit": ""
+    },
+    {
+      "section": "Spectrum line 1",
+      "name": "Energy",
+      "value": 0.1,
+      "unit": "MeV"
+    },
+    {
+      "section": "Spectrum line 1",
+      "name": "Input photon weight",
+      "value": 1,
+      "unit": ""
+    },
+    {
+      "section": "Spectrum line 1",
+      "name": "Transmission",
+      "value": "8.059e-29",
+      "unit": ""
+    },
+    {
+      "section": "Spectrum line 1",
+      "name": "Log transmission",
+      "value": -64.68815,
+      "unit": ""
+    },
+    {
+      "section": "Spectrum line 1",
+      "name": "Output photon weight",
+      "value": "8.059e-29",
+      "unit": ""
+    },
+    {
+      "section": "Spectrum line 2",
+      "name": "Energy",
+      "value": 1,
+      "unit": "MeV"
+    },
+    {
+      "section": "Spectrum line 2",
+      "name": "Input photon weight",
+      "value": 1,
+      "unit": ""
+    },
+    {
+      "section": "Spectrum line 2",
+      "name": "Transmission",
+      "value": "2.202e-1",
+      "unit": ""
+    },
+    {
+      "section": "Spectrum line 2",
+      "name": "Log transmission",
+      "value": -1.513277,
+      "unit": ""
+    },
+    {
+      "section": "Spectrum line 2",
+      "name": "Output photon weight",
+      "value": "2.202e-1",
+      "unit": ""
+    },
+    {
+      "section": "Uncertainty",
+      "name": "Density standard uncertainty (primary)",
+      "value": 0.02,
+      "unit": "g/cm3"
+    },
+    {
+      "section": "Uncertainty",
+      "name": "Thickness standard uncertainty (primary)",
+      "value": 0.005,
+      "unit": "cm"
+    },
+    {
+      "section": "Uncertainty",
+      "name": "Partial standard uncertainty of optical depth",
+      "value": 0.004273352244810274,
+      "unit": ""
+    },
+    {
+      "section": "Uncertainty",
+      "name": "Partial relative standard uncertainty of primary transmission",
+      "value": 0.004273352244810274,
+      "unit": ""
+    },
+    {
+      "section": "Uncertainty",
+      "name": "data",
+      "value": "NIST tables do not supply per-value standard uncertainties.",
+      "unit": ""
+    },
+    {
+      "section": "Uncertainty",
+      "name": "interpolation",
+      "value": "Unquantified. No invented percentage is assigned.",
+      "unit": ""
+    },
+    {
+      "section": "Uncertainty",
+      "name": "model",
+      "value": "Scattering buildup, secondary photons, geometry and dose conversion are not included.",
+      "unit": ""
+    },
+    {
+      "section": "Uncertainty",
+      "name": "assumption",
+      "value": "Independent density/thickness standard uncertainties; first-order propagation. This is a partial budget, not total uncertainty.",
+      "unit": ""
+    },
+    {
+      "section": "Equations",
+      "name": "Linear coefficient",
+      "value": "mu = (mu/rho) * rho",
+      "unit": ""
+    },
+    {
+      "section": "Equations",
+      "name": "Uncollided transmission",
+      "value": "T = exp(-mu*x)",
+      "unit": ""
+    },
+    {
+      "section": "Equations",
+      "name": "Inverse thickness",
+      "value": "x = -ln(T)/mu",
+      "unit": ""
+    },
+    {
+      "section": "Equations",
+      "name": "Characteristic layers",
+      "value": "HVL = ln(2)/mu; TVL = ln(10)/mu; lambda = 1/mu",
+      "unit": ""
+    },
+    {
+      "section": "Equations",
+      "name": "Layers",
+      "value": "T = exp(-sum(mu_i*x_i))",
+      "unit": ""
+    },
+    {
+      "section": "Equations",
+      "name": "Photon fluence ratio",
+      "value": "sum(w_j*T_j)/sum(w_j)",
+      "unit": ""
+    },
+    {
+      "section": "Equations",
+      "name": "Energy fluence ratio",
+      "value": "sum(E_j*w_j*T_j)/sum(E_j*w_j)",
+      "unit": ""
+    },
+    {
+      "section": "Assumptions",
+      "name": "Model",
+      "value": "Homogeneous layers, monoenergetic exponential attenuation per spectral line, fixed source coefficients, independent-atom mixture rule. No geometry correction, buildup, scattered/secondary photons or dose estimate.",
+      "unit": ""
+    },
+    {
+      "section": "Warnings",
+      "name": "Warning 1",
+      "value": "The calculations primarily describe uncollided photon attenuation under stated model assumptions. They are not a substitute for validated radiation transport simulations, professional shielding design, or regulatory radiation protection assessments.",
+      "unit": ""
+    },
+    {
+      "section": "Warnings",
+      "name": "Warning 2",
+      "value": "Interaction contributions use a separate XCOM dataset. They are checked against its own total, not against SRD 126. Small source differences are expected.",
+      "unit": ""
+    },
+    {
+      "section": "Warnings",
+      "name": "Warning 3",
+      "value": "HVL, TVL and mean free path shown are reference monoenergetic properties at the selected reference energy, not effective polyenergetic values.",
+      "unit": ""
+    }
+  ],
+  "warning": "The calculations primarily describe uncollided photon attenuation under stated model assumptions. They are not a substitute for validated radiation transport simulations, professional shielding design, or regulatory radiation protection assessments."
+}

@@ -1,0 +1,16 @@
+import { finite, nonnegative, positive } from './validation';
+export type EnergyUnit = 'eV' | 'keV' | 'MeV';
+export type LengthUnit = 'mm' | 'cm' | 'm';
+export type DensityUnit = 'g/cm³' | 'kg/m³';
+export type LinearUnit = 'cm⁻¹' | 'm⁻¹';
+export type TransmissionUnit = 'fraction' | '%';
+const energyScale = { eV: 1e-6, keV: 1e-3, MeV: 1 };
+const lengthScale = { mm: 0.1, cm: 1, m: 100 };
+export const toMeV = (v: number, u: EnergyUnit) => positive(finite(v * energyScale[u], 'Converted energy'), 'Photon energy');
+export const fromMeV = (v: number, u: EnergyUnit) => finite(v / energyScale[u], 'Converted energy');
+export const toCm = (v: number, u: LengthUnit) => nonnegative(finite(v * lengthScale[u], 'Converted thickness'), 'Thickness');
+export const fromCm = (v: number, u: LengthUnit) => finite(v / lengthScale[u], 'Converted length');
+export const toGcm3 = (v: number, u: DensityUnit) => nonnegative(finite(u === 'kg/m³' ? v / 1000 : v, 'Converted density'), 'Density');
+export const fromGcm3 = (v: number, u: DensityUnit) => finite(u === 'kg/m³' ? v * 1000 : v, 'Converted density');
+export const linearIn = (v: number, u: LinearUnit) => finite(u === 'm⁻¹' ? v * 100 : v, 'Converted linear coefficient');
+export const toFraction = (v: number, u: TransmissionUnit) => finite(u === '%' ? v / 100 : v, 'Converted transmission');

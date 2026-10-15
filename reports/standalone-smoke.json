@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-14T19:41:14.170Z",
+  "environment": "jsdom; built inline bundle executed; not a browser engine",
+  "passed": true,
+  "checks": [
+    "self-contained inline scripts",
+    "application startup",
+    "15 navigation pages",
+    "scientific SVG output",
+    "no startup error",
+    "theme switch",
+    "Arabic RTL switch"
+  ],
+  "errors": []
+}

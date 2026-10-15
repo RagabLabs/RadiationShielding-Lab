@@ -1,0 +1,29 @@
+lead SRD126 58 XCOM 74
+aluminum SRD126 38 XCOM 54
+iron SRD126 38 copper SRD126 41 XCOM 57
+XCOM 54
+tungsten SRD126 59 XCOM 75
+polyethylene SRD126 36 XCOM 52
+air SRD126 37 XCOM 54
+graphite SRD126 36 XCOM 52
+silicon SRD126 38 XCOM 54
+water SRD126 36 XCOM 52
+concrete SRD126 46 XCOM 69
+{
+  "retrievalDate": "2026-10-14",
+  "description": "Traceable subset of NIST SRD 8 and SRD 126 photon data; no energy extrapolation.",
+  "materialCount": 11,
+  "pointCount": 1110,
+  "pointDefinition": "One energy row in one material/source table; pre/post edge rows counted separately; both source families counted.",
+  "energyDomainMeV": [
+    0.001,
+    20
+  ],
+  "license": "NIST SRD copyright retained; source code MIT does not relicense these data. See DATA_LICENSE.md.",
+  "excludedMaterials": [
+    {
+      "name": "Stainless steel",
+      "reason": "No alloy grade/assay specified; no assumed industrial composition."
+    }
+  ]
+}

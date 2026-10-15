@@ -1,0 +1,779 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/scratch/4bea3bdf757e/RadiationShielding-Lab/node_modules/.bin/playwright",
+      "test",
+      "--list"
+    ],
+    "configFile": "/workspace/scratch/4bea3bdf757e/RadiationShielding-Lab/playwright.config.ts",
+    "rootDir": "/workspace/scratch/4bea3bdf757e/RadiationShielding-Lab/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/4bea3bdf757e/RadiationShielding-Lab/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "desktop-chromium",
+        "name": "desktop-chromium",
+        "testDir": "/workspace/scratch/4bea3bdf757e/RadiationShielding-Lab/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/workspace/scratch/4bea3bdf757e/RadiationShielding-Lab/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "mobile-chromium",
+        "name": "mobile-chromium",
+        "testDir": "/workspace/scratch/4bea3bdf757e/RadiationShielding-Lab/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/scratch/4bea3bdf757e/RadiationShielding-Lab/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "name": "desktop-chromium",
+        "testDir": "/workspace/scratch/4bea3bdf757e/RadiationShielding-Lab/tests/e2e",
+        "snapshotDir": "/workspace/scratch/4bea3bdf757e/RadiationShielding-Lab/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173/RadiationShielding-Lab/",
+          "trace": "retain-on-failure",
+          "acceptDownloads": true,
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop-chromium"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/scratch/4bea3bdf757e/RadiationShielding-Lab/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "name": "mobile-chromium",
+        "testDir": "/workspace/scratch/4bea3bdf757e/RadiationShielding-Lab/tests/e2e",
+        "snapshotDir": "/workspace/scratch/4bea3bdf757e/RadiationShielding-Lab/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173/RadiationShielding-Lab/",
+          "trace": "retain-on-failure",
+          "acceptDownloads": true,
+          "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1",
+          "viewport": {
+            "width": 390,
+            "height": 664
+          },
+          "screen": {
+            "width": 390,
+            "height": 844
+          },
+          "deviceScaleFactor": 3,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile-chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/playwright-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/playwright-html",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 4,
+    "webServer": {
+      "command": "npm run preview -- --port 4173 --strictPort",
+      "url": "http://127.0.0.1:4173/RadiationShielding-Lab/",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "lab.spec.ts",
+      "file": "lab.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "material selection refreshes density",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-8ddce6df7699907341d0",
+          "file": "lab.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "energy selection updates coefficients",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-388ea15520ad61ab45dd",
+          "file": "lab.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "custom density and zero-density limit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-2c4f8467e6e633198300",
+          "file": "lab.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "unit conversion retains physical input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-cee57ba1c353f6d25e52",
+          "file": "lab.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "layers can be added and removed",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-75537d1fcf9e7e06a0ee",
+          "file": "lab.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "charts render and support keyboard inspection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-9482c208cabc8132e77d",
+          "file": "lab.spec.ts",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "CSV download includes the engine result and sources",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-80ee2625d52bb24d125c",
+          "file": "lab.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "PDF download is a real PDF",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-d0825d0456be1f9ab7e2",
+          "file": "lab.spec.ts",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "PNG chart download is a real PNG",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-781d1877ed4be1c554d6",
+          "file": "lab.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "Arabic and English switch direction",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-95a646191a1d7d04f47e",
+          "file": "lab.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "light and dark theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-1d3e2a505aa0f80d783b",
+          "file": "lab.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "spectrum transport and malformed input feedback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-18210c27c4d3811b7ff2",
+          "file": "lab.spec.ts",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "invalid energy and negative thickness are rejected",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-6675ea3867250eee6d5f",
+          "file": "lab.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "layout fits the viewport and navigation is accessible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-0123a7add2a4688dc4a5",
+          "file": "lab.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "all fifteen pages render through hash navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-f54d32185fb7aae65d78",
+          "file": "lab.spec.ts",
+          "line": 18,
+          "column": 1
+        },
+        {
+          "title": "material selection refreshes density",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-59c40f37f5426937a8b5",
+          "file": "lab.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "energy selection updates coefficients",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-beb5f447e243a1d80314",
+          "file": "lab.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "custom density and zero-density limit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-816bdf37bfef76365293",
+          "file": "lab.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "unit conversion retains physical input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-9b8285f7a95fc0f0e9ea",
+          "file": "lab.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "layers can be added and removed",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-400f1fdaa99ad2a9ed14",
+          "file": "lab.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "charts render and support keyboard inspection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-d25b106ad92d40e2609f",
+          "file": "lab.spec.ts",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "CSV download includes the engine result and sources",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-91c643f471648909b271",
+          "file": "lab.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "PDF download is a real PDF",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-dbf17cbaaf987dbc299a",
+          "file": "lab.spec.ts",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "PNG chart download is a real PNG",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-5fe2a3b93fee2d6662b4",
+          "file": "lab.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "Arabic and English switch direction",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-27c9de45f0f49e6a690f",
+          "file": "lab.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "light and dark theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-1de8eb1de38320d4d31d",
+          "file": "lab.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "spectrum transport and malformed input feedback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-d393ac2a26e8fc81df2d",
+          "file": "lab.spec.ts",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "invalid energy and negative thickness are rejected",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-197ead05eb494fc830ca",
+          "file": "lab.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "layout fits the viewport and navigation is accessible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-708592cde0a53c3bfedc",
+          "file": "lab.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "all fifteen pages render through hash navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-dc01fb0d45fa41848b32",
+          "file": "lab.spec.ts",
+          "line": 18,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-14T19:39:17.034Z",
+    "duration": 18.776999999999987,
+    "expected": 0,
+    "skipped": 30,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

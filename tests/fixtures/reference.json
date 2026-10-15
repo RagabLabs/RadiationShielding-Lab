@@ -1,0 +1,112 @@
+[
+  {
+    "id": "01",
+    "name": "Mass coefficient",
+    "formula": "kappa(E)",
+    "expected": 0.07102,
+    "referenceDecimal": "0.07102",
+    "unit": "cm2/g",
+    "source": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z82.html",
+    "inputs": "Pb, 1 MeV; exact SRD126 row",
+    "tolerance": 1e-12
+  },
+  {
+    "id": "02",
+    "name": "Linear coefficient",
+    "formula": "mu=kappa*rho",
+    "expected": 0.806077,
+    "referenceDecimal": "0.8060770",
+    "unit": "1/cm",
+    "source": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z82.html",
+    "inputs": "Pb, 1 MeV; rho=11.35 g/cm3",
+    "tolerance": 1e-12
+  },
+  {
+    "id": "03",
+    "name": "Narrow-beam transmission",
+    "formula": "exp(-mu*x)",
+    "expected": 0.44660667206451593,
+    "referenceDecimal": "0.446606672064515910792039929163507459833071519966298788313747",
+    "unit": "fraction",
+    "source": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z82.html",
+    "inputs": "Pb, 1 MeV; x=1 cm",
+    "tolerance": 1e-12
+  },
+  {
+    "id": "04",
+    "name": "Required thickness",
+    "formula": "-ln(T)/mu",
+    "expected": 5.713064863515633,
+    "referenceDecimal": "5.71306486351563357847449177853818979477420020327778357658966",
+    "unit": "cm",
+    "source": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z82.html",
+    "inputs": "Pb, 1 MeV; target T=0.01",
+    "tolerance": 1e-12
+  },
+  {
+    "id": "05",
+    "name": "Half-value layer",
+    "formula": "ln(2)/mu",
+    "expected": 0.8599019455460772,
+    "referenceDecimal": "0.859901945546077247480367410877839918612614098107569443267430",
+    "unit": "cm",
+    "source": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z82.html",
+    "inputs": "Pb, 1 MeV",
+    "tolerance": 1e-12
+  },
+  {
+    "id": "06",
+    "name": "Tenth-value layer",
+    "formula": "ln(10)/mu",
+    "expected": 2.8565324317578167,
+    "referenceDecimal": "2.85653243175781678923724588926909489738710010163889178829483",
+    "unit": "cm",
+    "source": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z82.html",
+    "inputs": "Pb, 1 MeV",
+    "tolerance": 1e-12
+  },
+  {
+    "id": "07",
+    "name": "Multilayer transmission",
+    "formula": "exp(-sum(mu_i*x_i))",
+    "expected": 0.2201872408131924,
+    "referenceDecimal": "0.220187240813192418337694526244811585191057957429812312484041",
+    "unit": "fraction",
+    "source": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z82.html ; https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/water.html",
+    "inputs": "Pb 1 cm + water 10 cm, 1 MeV",
+    "tolerance": 1e-12
+  },
+  {
+    "id": "08",
+    "name": "Mean free path",
+    "formula": "1/mu",
+    "expected": 1.240576272490097,
+    "referenceDecimal": "1.24057627249009709990484779990000955243729817374766926732806",
+    "unit": "cm",
+    "source": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z82.html",
+    "inputs": "Pb, 1 MeV",
+    "tolerance": 1e-12
+  },
+  {
+    "id": "09",
+    "name": "Partial coefficient sum",
+    "formula": "coherent+incoherent+photoelectric+pair",
+    "expected": 0.071021,
+    "referenceDecimal": "0.071021",
+    "unit": "cm2/g",
+    "source": "https://physics.nist.gov/cgi-bin/Xcom/xcom3_1",
+    "inputs": "Pb, 1 MeV; XCOM coherent=.002991, incoherent=.04993, PE=.01810; pair=0",
+    "tolerance": 1e-12
+  },
+  {
+    "id": "10",
+    "name": "Spectrum photon ratio",
+    "formula": "sum(w*T)/sum(w)",
+    "expected": 0.3372159674823395,
+    "referenceDecimal": "0.337215967482339505039770061806809591361907163825763395500506",
+    "unit": "fraction",
+    "source": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/water.html",
+    "inputs": "Water 10 cm; 0.1 and 1 MeV; equal photon weights",
+    "tolerance": 1e-12
+  }
+]

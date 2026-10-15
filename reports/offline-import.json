@@ -1,0 +1,13 @@
+{
+  "command": "python3 scripts/import_nist.py --offline",
+  "exitCode": 0,
+  "before": {
+    "src/data/materials.json": "5033141c0c4a7f87c4a8dca64598e4511eb8b852859473231393dc0960b4039d",
+    "data/materials.json": "5033141c0c4a7f87c4a8dca64598e4511eb8b852859473231393dc0960b4039d"
+  },
+  "after": {
+    "src/data/materials.json": "5033141c0c4a7f87c4a8dca64598e4511eb8b852859473231393dc0960b4039d",
+    "data/materials.json": "5033141c0c4a7f87c4a8dca64598e4511eb8b852859473231393dc0960b4039d"
+  },
+  "byteIdentical": true
+}

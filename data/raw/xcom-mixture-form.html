@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<title>XCOM: Mixture Options</title>
+<body BGColor="#FFFFFF" Text="#000000">
+<h2>Fill out the form to select the data to be displayed:</h2>
+<form method="POST" action="/cgi-bin/Xcom/xcom3_3">
+<p>
+<a href="/PhysRefData/Xcom/Text/chap4.html">Help</a><p>
+<table cellpadding=4 border=1>
+<tr><td colspan=2 BGColor="#FFFFCC">
+<b>Enter the formulae and relative weights separated by a space for each compound.
+One compound per line. For example:</b><pre>H2O 0.9
+NaCl 0.1</pre>
+<p>Note: Weights not summing to 1 will be normalized.
+<blockquote>
+<textarea name="Formulae" rows=5 cols=30></textarea>
+</blockquote>
+</td></tr>
+<tr><td colspan=2 BGColor="#FFFFCC">
+<p><b>Optional output title:</b>&#160;&#160;<input type="text" name="Name" size=40>
+</td></tr><tr><td BGColor="#FFFFCC">
+<b>Graph options:</b>
+<p><input type="checkbox" name="Graph6" checked> Total Attenuation with Coherent Scattering<br>
+<input type="checkbox" name="Graph7"> Total Attenuation without Coherent Scattering<br>
+<input type="checkbox" name="Graph1"> Coherent Scattering<br>
+<input type="checkbox" name="Graph2"> Incoherent Scattering<br>
+<input type="checkbox" name="Graph3"> Photoelectric Absorption<br>
+<input type="checkbox" name="Graph4"> Pair Production in Nuclear Field<br>
+<input type="checkbox" name="Graph5"> Pair Production in Electron Field<br>
+<p><input type="checkbox" name="Graph0"> None<br>
+</td>
+<td valign=top BGColor="#FFFFCC">
+<b>Additional energies in MeV: (optional)</b> (up to 100 allowed)
+<p>Note: Energies must be between 0.001&#160;-&#160;100000&#160;MeV (1&#160;keV&#160;-&#160;100&#160;GeV) (only <b>4</b> significant figures will be used).<br>
+One energy per line. Blank lines will be ignored.
+<input type=hidden name=NumAdd value=1>
+<p><textarea name="Energies" rows=5 cols=15></textarea>
+<input type=checkbox name=Output checked> <b>Include the standard grid</b>
+<p>
+<b>Energy Range:</b><p>
+Minimum: <input type="text" name="WindowXmin" value="0.001" size="8" maxlength="8"> MeV 
+<p>Maximum: <input type="text" name="WindowXmax" value="100000" size="8" maxlength="8"> MeV 
+<input type="hidden" name="ResizeFlag" value="on">
+</td>
+</tr>
+</table>
+<p><input type="submit" value="Submit Information"><input type="reset" value="Reset">
+</form>
+<hr>
+Return to <a href="/PhysRefData/Xcom/html/xcom1.html">previous</a> document.
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474","spa":2}' crossorigin="anonymous"></script>
+</body>

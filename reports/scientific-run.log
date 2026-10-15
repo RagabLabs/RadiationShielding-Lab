@@ -1,0 +1,11 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> radiation-shielding-lab@1.0.0 validate:scientific
+> node --import tsx scripts/scientific-report.ts
+
+{
+  "referenceCases": 10,
+  "passed": 10,
+  "failed": 0,
+  "maxAbsoluteDifference": 4.440892098500626e-16
+}

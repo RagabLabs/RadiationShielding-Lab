@@ -1,0 +1,32 @@
+Listing tests:
+  [desktop-chromium] › lab.spec.ts:4:1 › material selection refreshes density
+  [desktop-chromium] › lab.spec.ts:5:1 › energy selection updates coefficients
+  [desktop-chromium] › lab.spec.ts:6:1 › custom density and zero-density limit
+  [desktop-chromium] › lab.spec.ts:7:1 › unit conversion retains physical input
+  [desktop-chromium] › lab.spec.ts:8:1 › layers can be added and removed
+  [desktop-chromium] › lab.spec.ts:9:1 › charts render and support keyboard inspection
+  [desktop-chromium] › lab.spec.ts:10:1 › CSV download includes the engine result and sources
+  [desktop-chromium] › lab.spec.ts:11:1 › PDF download is a real PDF
+  [desktop-chromium] › lab.spec.ts:12:1 › PNG chart download is a real PNG
+  [desktop-chromium] › lab.spec.ts:13:1 › Arabic and English switch direction
+  [desktop-chromium] › lab.spec.ts:14:1 › light and dark theme
+  [desktop-chromium] › lab.spec.ts:15:1 › spectrum transport and malformed input feedback
+  [desktop-chromium] › lab.spec.ts:16:1 › invalid energy and negative thickness are rejected
+  [desktop-chromium] › lab.spec.ts:17:1 › layout fits the viewport and navigation is accessible
+  [desktop-chromium] › lab.spec.ts:18:1 › all fifteen pages render through hash navigation
+  [mobile-chromium] › lab.spec.ts:4:1 › material selection refreshes density
+  [mobile-chromium] › lab.spec.ts:5:1 › energy selection updates coefficients
+  [mobile-chromium] › lab.spec.ts:6:1 › custom density and zero-density limit
+  [mobile-chromium] › lab.spec.ts:7:1 › unit conversion retains physical input
+  [mobile-chromium] › lab.spec.ts:8:1 › layers can be added and removed
+  [mobile-chromium] › lab.spec.ts:9:1 › charts render and support keyboard inspection
+  [mobile-chromium] › lab.spec.ts:10:1 › CSV download includes the engine result and sources
+  [mobile-chromium] › lab.spec.ts:11:1 › PDF download is a real PDF
+  [mobile-chromium] › lab.spec.ts:12:1 › PNG chart download is a real PNG
+  [mobile-chromium] › lab.spec.ts:13:1 › Arabic and English switch direction
+  [mobile-chromium] › lab.spec.ts:14:1 › light and dark theme
+  [mobile-chromium] › lab.spec.ts:15:1 › spectrum transport and malformed input feedback
+  [mobile-chromium] › lab.spec.ts:16:1 › invalid energy and negative thickness are rejected
+  [mobile-chromium] › lab.spec.ts:17:1 › layout fits the viewport and navigation is accessible
+  [mobile-chromium] › lab.spec.ts:18:1 › all fifteen pages render through hash navigation
+Total: 30 tests in 1 file

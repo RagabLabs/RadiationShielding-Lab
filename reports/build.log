@@ -1,0 +1,44 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> radiation-shielding-lab@1.0.0 build
+> tsc -b && vite build && node scripts/standalone.mjs
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 2146 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                        0.62 kB │ gzip:   0.38 kB
+dist/assets/index-ByTPsp46.css        21.46 kB │ gzip:   5.13 kB
+dist/assets/purify.es-BZxk_wWO.js     29.07 kB │ gzip:  11.48 kB │ map:   133.56 kB
+dist/assets/index.es-yJe8Mlyz.js     151.43 kB │ gzip:  48.93 kB │ map:   637.06 kB
+dist/assets/html2canvas-DMHah5ML.js  199.50 kB │ gzip:  46.80 kB │ map:   627.59 kB
+dist/assets/index-DeTQAZWb.js        853.62 kB │ gzip: 258.14 kB │ map: 2,570.73 kB
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "node_modules/lucide-react/dist/esm/context.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m node_modules/lucide-react/dist/esm/context.mjs:2:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "node_modules/lucide-react/dist/esm/Icon.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m node_modules/lucide-react/dist/esm/Icon.mjs:2:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+✓ built in 621ms
+Built offline START-HERE.html (no server or runtime network access required).

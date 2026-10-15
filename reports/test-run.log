@@ -1,0 +1,22 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> radiation-shielding-lab@1.0.0 test
+> vitest run
+
+
+ RUN  v5.0.4 /workspace/scratch/4bea3bdf757e/RadiationShielding-Lab
+
+ ✓ tests/physics.test.ts (60 tests) 28ms
+ ✓ tests/data.test.ts (89 tests) 75ms
+ ✓ tests/reports.test.ts (5 tests) 29ms
+ ✓ tests/ui.test.tsx (15 tests) 2210ms
+   ✓ DOM integration (jsdom; not browser-engine tests) (15)
+     ✓ renders analysis and all material choices 303ms
+     ✓ adds and removes a shield layer 324ms
+
+ Test Files  4 passed (4)
+      Tests  169 passed (169)
+   Start at  14:41:02
+   Duration  3.22s (tests 66%, environment 15%, import 12%, transform 7%, worker 1%)
+
+JSON report written to /workspace/scratch/4bea3bdf757e/RadiationShielding-Lab/reports/vitest-results.json

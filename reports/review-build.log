@@ -1,0 +1,28 @@
+{
+  "appVersion": "1.0.0",
+  "generatedAt": "2026-10-14T19:41:14.786762+00:00",
+  "materials": 11,
+  "attenuationRows": 1110,
+  "absorptionEdgePairs": 54,
+  "vitestTotal": 169,
+  "vitestPassed": 169,
+  "vitestFailed": 0,
+  "vitestSkipped": 0,
+  "playwrightDefined": 30,
+  "playwrightExecuted": 0,
+  "playwrightNotExecuted": 30,
+  "playwrightReason": "Browser binary and required managed browser-control capability unavailable; no preview server/browser was started or installed.",
+  "scientificReferenceCases": 10,
+  "scientificReferencesPassed": 10,
+  "maxAbsoluteReferenceDifference": 4.440892098500626e-16,
+  "dataValidationPassed": true,
+  "standaloneDOMSmokePassed": true,
+  "offlineImportByteIdentical": true,
+  "remainingIssues": [
+    "Actual browser layout and canvas/download interaction verification pending.",
+    "NIST SRD public redistribution permission not independently obtained.",
+    "No engineering radiation transport, buildup or dose model.",
+    "Remote CI/Pages workflows prepared, not executed or published."
+  ]
+}
+Review PDF: /workspace/scratch/4bea3bdf757e/RadiationShielding-Lab/reports/validation-review.pdf

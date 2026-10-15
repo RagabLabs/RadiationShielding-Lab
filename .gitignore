@@ -1,0 +1,7 @@
+node_modules/
+.standalone/
+.vite/
+*.tsbuildinfo
+test-results/
+reports/playwright-html/
+reports/pdf-qa/

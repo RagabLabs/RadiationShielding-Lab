@@ -1,0 +1,62 @@
+{
+  "renderer": "PyMuPDF, with Poppler preliminary renders",
+  "pages": [
+    {
+      "file": "sample-analysis.pdf",
+      "page": 1,
+      "characters": 1503,
+      "charactersOutsidePageMargin": 0
+    },
+    {
+      "file": "sample-analysis.pdf",
+      "page": 2,
+      "characters": 1351,
+      "charactersOutsidePageMargin": 0
+    },
+    {
+      "file": "sample-analysis.pdf",
+      "page": 3,
+      "characters": 1334,
+      "charactersOutsidePageMargin": 0
+    },
+    {
+      "file": "sample-analysis.pdf",
+      "page": 4,
+      "characters": 1238,
+      "charactersOutsidePageMargin": 0
+    },
+    {
+      "file": "sample-analysis.pdf",
+      "page": 5,
+      "characters": 1121,
+      "charactersOutsidePageMargin": 0
+    },
+    {
+      "file": "validation-review.pdf",
+      "page": 1,
+      "characters": 1788,
+      "charactersOutsidePageMargin": 0
+    },
+    {
+      "file": "validation-review.pdf",
+      "page": 2,
+      "characters": 2552,
+      "charactersOutsidePageMargin": 0
+    },
+    {
+      "file": "validation-review.pdf",
+      "page": 3,
+      "characters": 1490,
+      "charactersOutsidePageMargin": 0
+    },
+    {
+      "file": "validation-review.pdf",
+      "page": 4,
+      "characters": 1942,
+      "charactersOutsidePageMargin": 0
+    }
+  ],
+  "passed": true,
+  "visualReview": "All 5 sample-analysis pages and all 4 validation-review pages rendered and visually inspected; no clipping, overlap, or unreadable text observed in final PyMuPDF renders.",
+  "visuallyReviewed": true
+}
